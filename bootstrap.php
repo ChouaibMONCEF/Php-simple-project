@@ -1,5 +1,5 @@
 <?php 
 
-define('BASE_URL','http://localhost/OLearn/');
+define('BASE_URL',' BASE URL HERE ');
 
 ?>

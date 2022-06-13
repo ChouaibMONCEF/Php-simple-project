@@ -9,7 +9,7 @@ class adminController{
             $matricules = $obj->getAll();
             require __DIR__ . '/../View/matricules.php';
         }else{
-            header('Location: http://localhost/Sebelta/public/login');
+            header('Location: '. BASE_URL .'/Sebelta/public/login');
         }
     }
 
@@ -24,13 +24,13 @@ class adminController{
             $login = $obj->connect($username);
 
             if( !isset($login) ){
-                header('Location: http://localhost/Sebelta/public/login');
+                header('Location: '. BASE_URL .'/Sebelta/public/login');
             }else{
                     if(!password_verify( $pswrd , $login->password)){
-                        header('Location: http://localhost/Sebelta/public/login');
+                        header('Location: '. BASE_URL .'/Sebelta/public/login');
                     }else{
                         $_SESSION['admin'] = $login->username;
-                        header('Location: http://localhost/Sebelta/admin/matricules');
+                        header('Location: '. BASE_URL .'/Sebelta/admin/matricules');
                     }
             }
         }
@@ -39,9 +39,9 @@ class adminController{
     function logout(){
         if (isset($_SESSION['admin'])) {
         session_destroy();
-        header('Location: http://localhost/Sebelta/public/login');
+        header('Location: '. BASE_URL .'/Sebelta/public/login');
         }else {
-            header('Location: http://localhost/Sebelta/public/login');
+            header('Location: '. BASE_URL .'/Sebelta/public/login');
         }
     }
 

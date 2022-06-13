@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Matricules</title>
 </head>
-<a href="http://localhost/sebelta/admin/logout"><button type="button" class="btn btn-danger m-3">Logout</button></a>
-<body style="padding: 100px; background-color: rgb(40, 15, 51) ;">
+<a href="<?php echo BASE_URL;?>/sebelta/admin/logout"><button type="button" class="btn btn-danger m-3">Logout</button></a>
+<body style="padding: 25px; background-color: rgb(40, 15, 51) ;">
     <table class="table align-middle mb-0 bg-dark">
   <thead class="bg-light">
     <tr>
@@ -24,7 +24,7 @@
         <td>
         <div class="d-flex align-items-center">
           
-          <div class="ms-3">
+          <div class="ms-1">
             <p class="fw-bold text-white mb-1"><?php echo $matricule['Matricule']; ?> </p>
            
           </div>

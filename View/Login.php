@@ -10,7 +10,7 @@
     <title>Login</title>
 </head>
 <body>
-<form method="POST" action="http://localhost/Sebelta/admin/login">
+<form method="POST" action="<?php echo BASE_URL;?>/Sebelta/admin/login">
    <div class="container mt-5">
       <div class="row d-flex justify-content-center">
         <div class="col-md-6">
