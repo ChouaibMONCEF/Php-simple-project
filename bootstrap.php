@@ -1,5 +1,5 @@
 <?php 
 
-define('BASE_URL',' BASE URL HERE ');
+define('BASE_URL','http://localhost/Sebelta');
 
 ?>
